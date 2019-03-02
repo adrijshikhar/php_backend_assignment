@@ -10,6 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    Welcome <?php echo $_SESSION[name]?>
+   <h1>Welcome  <?php echo $_SESSION[name]?></h1>
+  <div class="row p-3">
+   <div class="col col-9"><?php include("question_list_user.php")?></div>
+   <div class="col col-3"><h3>Leader Board <?php include("leaderboard.php")?></h3></div>
+  </div>  
+
+
+
+
+   
 </body>
 </html>

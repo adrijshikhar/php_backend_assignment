@@ -25,8 +25,8 @@ if ($result->num_rows > 0) {
         <td>$r[id]</td>
         <td>$r[question]</td>";
         $s = "select * from correct_answer where question_no=$r[id]";
-        $ans=$conn->query($s);
-        
+        $ans = $conn->query($s);
+
         echo "  <td>";
         if ($ans->num_rows > 0) {
             while ($ans_id = $ans->fetch_assoc()) {
